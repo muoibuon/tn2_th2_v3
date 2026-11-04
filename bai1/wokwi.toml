@@ -1,0 +1,5 @@
+# Doi ten env (vd1_dung_delay / vd2_non_blocking / bai_tap), build env do, roi F1 -> Wokwi: Start Simulator
+[wokwi]
+version = 1
+firmware = '.pio/build/bai_tap/firmware.bin'
+elf = '.pio/build/bai_tap/firmware.elf'

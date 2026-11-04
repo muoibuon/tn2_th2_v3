@@ -1,0 +1,10 @@
+# Doi ten env (vd1_rtc_data_attr / vd2_thuc_day_setup / bai_tap_wokwi), build env do, roi F1 -> Wokwi: Start Simulator
+[wokwi]
+version = 1
+firmware = '.pio/build/vd1_rtc_data_attr/firmware.bin'
+elf = '.pio/build/vd1_rtc_data_attr/firmware.elf'
+
+# Web cua bai_tap_wokwi: http://localhost:8180
+[[net.forward]]
+from = 'localhost:8180'
+to = 'target:80'
