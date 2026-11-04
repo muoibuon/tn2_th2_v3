@@ -9,9 +9,8 @@ Nạp: `cd bai1` → `pio run -e <env> -t upload` → `pio device monitor`
 ## Bài 1 — Timer phần cứng & non-blocking
 - `vd1_dung_delay`: LED 500 ms, đọc biến trở 2000 ms, heartbeat 5000 ms viết nối tiếp bằng `delay()`.
 - `vd2_non_blocking`: cùng 3 việc, viết non-blocking bằng `millis()`.
-- `bai_tap`: so sánh 3 cách tạo nhịp (delay, millis, timer phần cứng), đo độ lệch so với chu kỳ đặt, chỉ ra cách nào bám nhịp tốt khi CPU bận.
+
 
 ## Bài 2 — Deep sleep & các chế độ tiết kiệm điện
 - `vd1_rtc_data_attr`: biến `RTC_DATA_ATTR` giữ qua deep sleep, biến thường bị mất.
 - `vd2_thuc_day_setup`: thức dậy chạy lại từ `setup()`, đọc nguyên nhân thức (timer / nút GPIO4).
-- `bai_tap`: so sánh Active, Modem-sleep, Light-sleep, Deep-sleep qua dấu hiệu quan sát được (LED, Wi-Fi/web, biến nhớ). Nêu giới hạn: khó đo trực tiếp dòng điện bằng phần cứng hiện có.
